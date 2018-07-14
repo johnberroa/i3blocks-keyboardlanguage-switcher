@@ -13,7 +13,9 @@ It's my first bash script!
 * Log out and in and all should work.
 
 ## Usage
-Press ``mod+space`` to switch between keyboard layouts.  A notification will appear saying the keyboard layout changed, and the icon on the i3blocks status bar will display the currently active keyboard.
+Press ``mod+space`` to switch between keyboard layouts as specified in the ``language`` script.  A notification will appear saying the keyboard layout changed, and the icon on the i3blocks status bar will display the currently active keyboard.
+
+Default setup is US -> US International -> German
 
 ## Files
 ``language``: A script that switches between keyboard layouts based on what layout is currently active.  Here you can add or take away layouts.  To get the proper name, in the terminal switch the layout with ``setxkbmap`` and print the output with ``setxkbmap -print | grep xkb_symbols | awk '{print $4}' | awk -F"+" '{print $2}'``.  Use this for the string equality in the if statements.
