@@ -1,0 +1,2 @@
+# Change language
+bindsym $mod+space exec language && notify-send 'Keyboard layout changed' && pkill -RTMIN+7 i3blocks 

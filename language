@@ -1,0 +1,19 @@
+#!/bin/bash
+
+CURR_LANG="$(setxkbmap -print | grep xkb_symbols | awk '{print $4}' | awk -F"+" '{print $2}')"
+US="us"
+INTL="us(intl)"
+DE="de"
+
+if [ $CURR_LANG == $INTL ]
+then
+	setxkbmap de
+elif [ $CURR_LANG == $DE ]
+then
+	setxkbmap us
+elif [ $CURR_LANG == $US ]
+then
+	setxkbmap us -variant intl
+else
+	setxkbmap us
+fi
