@@ -8,7 +8,7 @@ It's my first bash script!
 ## Installation
 * Place the block from ``.i3blocks.conf`` wherever you want in your own ``.i3blocks.conf`` config file.
 * Place the ``bindsym`` command from ``config`` into your own i3 ``config`` and take note of the mod key combination--it may override a current combination!
-* Create (if not already existing) a directory called ``bin`` in your root, and place language and (optionally) language-printer in there.  Make them executable by running: ``sudo chmod +x filename``
+* Create (if not already existing) a directory called ``bin`` in your home directory, and place language and (optionally) language-printer in there.  Make them executable by running: ``sudo chmod +x filename``
 * Edit ``~.bashrc`` and add the following line: ``export PATH=$PATH:~/bin``
 * Log out and in and all should work.
 
